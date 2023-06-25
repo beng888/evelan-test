@@ -14,8 +14,6 @@ export const metadata: Metadata = {
 export default async function Home() {
 
   const response = await getUsers()
-  console.log("🚀 ~ file: page.tsx:10 ~ Home ~ response:", response)
-
 
   return (
     <main className='px-4 sm:px-12 flex-1 flex flex-col'>

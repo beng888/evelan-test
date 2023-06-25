@@ -14,7 +14,6 @@ export default function UserList(res: TGetUsersResponse) {
 
         if (page < total_pages) {
             const newResponse = await getUsers(page + 1)
-            console.log("🚀 ~ file: UserList.tsx:10 ~ loadMore ~ newResponse:", newResponse)
 
             setusers((prev) => [...prev, ...newResponse.data])
             setPage(newResponse.page)
